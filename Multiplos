@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Multiplos
+{
+    public static void main(String[] args) {
+        Scanner entrada= new Scanner(System.in);
+        int n;
+        int d=0;
+        System.out.println("Ingrese el numero: ");
+        n=entrada.nextInt();
+        for(int i=1; i<100; i++)
+        {
+            if(i%n==0)
+            {
+                d=d+i;
+            }
+            
+        }
+        System.out.printf("Los multiplos de %d son %d",n,d);
+    }
+}
